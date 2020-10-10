@@ -58,6 +58,7 @@ popd
 # Clone the Builder master repo
 retry git clone -q https://github.com/pytorch/builder.git "$BUILDER_ROOT"
 pushd "$BUILDER_ROOT"
+git checkout a2b310fa6e72ef808cba4fb04e53539b2be35671
 echo "Using builder from "
 git --no-pager log --max-count 1
 popd
